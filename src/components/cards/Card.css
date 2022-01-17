@@ -1,0 +1,80 @@
+.card-container {
+  display: flex;
+}
+.card-container .card {
+  width: 240px;
+  height: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.card-container .card .card-image img {
+  width: 240px;
+  height: 159.75px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-container .card .card-content {
+  padding-left: 20px;
+  width: 185px;
+  height: 147px;
+}
+
+.card-container .card .card-content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 20px 0px;
+}
+
+.card-container .card .card-content p {
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.card-container .card .card-action {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: flex-end;
+  padding-right: 11px;
+}
+.card-container .card .card-action .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.card-container .card .card-action .delete-btn:hover {
+  background-color: orangered;
+}
+
+.card-container .card .card-action .check-btn.visited {
+  background: #14c704;
+}
+.card-container .card .card-action .check-btn:hover {
+  background: #14c704;
+}
+
+@media screen and (max-width: 500px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-container .card {
+    width: 100%;
+    background-color: #fff;
+  }
+}

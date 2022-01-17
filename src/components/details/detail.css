@@ -1,0 +1,8 @@
+.detail__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail__content {
+  flex: 1240px;
+}
